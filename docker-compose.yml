@@ -4,8 +4,6 @@ services:
   licorice-bot:
     image: ghcr.io/boxingoctopus/licorice-bot:latest
     container_name: licorice-bot
-    env_file:
-      - .env
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
     restart: unless-stopped 
